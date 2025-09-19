@@ -138,7 +138,6 @@ const PROJECTS = [
   },
 ];
 
-// ====== Small Helpers ======
 const Section = ({ id, title, children }) => (
   <section id={id} className="section">
     <h2 className="section-title">{title}</h2>
@@ -177,9 +176,7 @@ function App() {
           />
       </h2>
 
-      {/* Main */}
       <main className="container">
-        {/* About */}
         <Section id="about" title="About">
           <div className="about">
             <div className="about-left">
@@ -225,8 +222,6 @@ function App() {
           </div>
         </Section>
 
-
-        {/* Education */}
         <Section id="education" title="Education">
           <div className="grid">
             {EDUCATION.map((e) => (
@@ -244,8 +239,6 @@ function App() {
           </div>
         </Section>
         
-
-        {/* Experiences (Work + Research) */}
         <Section id="experiences" title="Experiences">
           <div className="stack">
             {EXPERIENCES.map((x, idx) => (
@@ -280,8 +273,6 @@ function App() {
           </div>
         </Section>
 
-
-        {/* Projects */}
         <Section id="projects" title="Projects">
           <div className="grid three">
             {PROJECTS.map((p) => (
